@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Railway Reservation Booking Online</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="media.css">
 </head>
 <body>
     <header>
@@ -21,11 +22,13 @@
                 <li>Train Info</li>
                 <li>More</li>
             </ul>
+             <!-- For Mobile -->
+            <i class="fa-solid fa-bars menu-toggle"></i>
         </div>
     </header>
 
     <section id="main">
-        <h1>INDIAN RAIWAYS</h1>
+        <h1>INDIAN RAILWAYS</h1>
         <p>RailSwift—always by your side<br> for smooth and reliable journeys.</p>
        <div class="overlay"></div>
 
@@ -35,34 +38,30 @@
             <!-- From Location -->
             <div class="form-group">
                 <label for="from">From</label>
-                <div class="input-icon">
+                
 
                     <input type="text" id="from" placeholder="Enter Departure City" required>
-                </div>
+                
             </div>
     
             <!-- To Location -->
             <div class="form-group">
                 <label for="to">To</label>
-                <div class="input-icon">
                   
                     <input type="text" id="to" placeholder="Enter Destination City" required>
-                </div>
             </div>
     
             <!-- Date -->
             <div class="form-group">
                 <label for="date">Date</label>
-                <div class="input-icon">
 
-                    <input type="date" id="date" required>
-                </div>
+                    <input type="date" id="date"  >
             </div>
     
             <!-- Class Dropdown -->
             <div class="form-group">
                 <label for="class">Class</label>
-                <select id="class">
+                <select id="classes">
                     <option>All Classes</option>
                     <option>First Class</option>
                     <option>Second Class</option>
@@ -75,13 +74,13 @@
             <div class="form-group checkboxes">
                 <label>Person with Disability Concession<input type="checkbox"> </label>
                 <label> Flexible with Date<input type="checkbox"></label>
-                <label> Flexible with Date<input type="checkbox"> </label>
+                <label> Flexible with Time<input type="checkbox"> </label>
                 <label>Railway Pass Concession<input type="checkbox"> </label>
             </div>
     
             <!-- Search Button -->
             <div class="form-group">
-                <button type="submit" class="search-btn"><a href="./trainlist.html">Search Trains</a></button>
+                <button type="submit" class="search-btn">Search Trains</button>
             </div>
         </form>
     </div>
@@ -96,74 +95,55 @@
 
         <div class="cards">
 
-            <div class="card">
-               <img src="./images/csm_zuege-indien-buehne_5e6aa79926.jpg">
-                 <div class="text">
-                    <h3>Vande Bharat Express</h3>
-                    <p>Experience the future of Indian rail travel with the Vande Bharat Express.
-                         This high-speed, modern train is designed for comfort and efficiency,
-                          providing passengers with plush seating, advanced safety features, and
-                           onboard catering services. With RailSwift, booking your tickets for 
-                           this revolutionary journey is seamless, allowing you to travel faster
-                            and smarter across the Indian landscape. Discover the joy of rail travel like never before!
-
-                    </p>
-                 </div>
-            </div>
-
-            <div class="card">
-               <img src="./images/international.webp">
-                 <div class="text">
-                    <h3>International Packages</h3>
-                    <p>Embark on a global adventure with our exclusive International Packages, curated to offer you unforgettable experiences around the world. From the vibrant streets of Europe to the serene landscapes of Asia, RailSwift has partnered with leading travel agencies to ensure you receive the best accommodations, guided tours, and transport options. Let us handle your travel arrangements so you can focus on making memories in breathtaking destinations.</p>
-                 </div>
-            </div>
-
-            <div class="card">
-               <img src="./images/desktop-wallpaper-varanasi-ghats-varanasi-ganga-ghat.jpg">
-                 <div class="text">
-                    <h3>Domestic Air Packages
-                    </h3>
-                    <p>Take to the skies with our Domestic Air Packages, specially designed for those looking to explore the diverse beauty of India. Whether you’re heading to the lush hills of the North or the tranquil beaches of the South, RailSwift provides you with the best flight options, hassle-free booking, and exciting add-ons. Experience the rich culture and stunning landscapes of India with ease and comfort, all while saving time and money.</p>
-                 </div>
-            </div>
-
-            <div class="card">
-               <img src="./images/royal-heritage-haveli.jpg">
-                 <div class="text">
-                    <h3>Royal Heritage Journeys</h3>
-                    <p>Step into a world of opulence with our Royal Heritage Journeys. Travel through India’s majestic palaces, forts, and ancient cities aboard luxurious trains that evoke the grandeur of royal heritage. With carefully curated itineraries, RailSwift ensures that you experience the rich history and culture of India in the most comfortable way possible. Indulge in gourmet meals and personalized service as you create unforgettable memories on this regal adventure</p>
-                 </div>
-            </div>
-
-            <div class="card">
-               <img src="./images/mountain.jpg">
-                 <div class="text">
-                    <h3>Rail Tour Packages
-                    </h3>
-                    <p>Discover the scenic beauty of India with our Rail Tour Packages, crafted for avid travelers seeking adventure and exploration. From the snow-capped mountains of the Himalayas to the lush greenery of Western Ghats, these tours offer a unique way to see the country. RailSwift provides flexible itineraries, comfortable accommodations, and the best rail experiences, ensuring your journey is as memorable as the destinations you visit.
-
-                    </p>
-                 </div>
-            </div>
-
-            <div class="card">
-               <img src="./images/desert.jpg">
-                 <div class="text">
-                    <h3>Desert Adventures
-                    </h3>
-                    <p>Venture into the enchanting deserts of India with our Desert Adventures. Experience the magic of Rajasthan’s golden sands, vibrant culture, and historical sites through well-planned excursions. Enjoy camel rides, cultural performances, and traditional cuisine while RailSwift takes care of all your booking needs. Explore the beauty and mystery of the desert landscape with comfort and ease, making every moment of your adventure truly special.
-
-
-
-
-
-
-                    </p>
-                 </div>
-            </div>
-
+    <div class="card">
+        <img src="./images/csm_zuege-indien-buehne_5e6aa79926.jpg">
+        <div class="text">
+            <h3>Vande Bharat Express</h3>
+            <p>Experience the future of Indian rail travel with the Vande Bharat Express. This high-speed, modern train offers plush seating and onboard services. RailSwift provides a seamless booking experience for your journey.</p>
         </div>
+    </div>
+
+    <div class="card">
+        <img src="./images/international.webp">
+        <div class="text">
+            <h3>International Packages</h3>
+            <p>Embark on a global adventure with our International Packages. From Europe’s charm to Asia’s calm, RailSwift partners with top agencies to offer the best accommodations, tours, and transport.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./images/desktop-wallpaper-varanasi-ghats-varanasi-ganga-ghat.jpg">
+        <div class="text">
+            <h3>Domestic Air Packages</h3>
+            <p>Explore India’s diverse beauty with our Domestic Air Packages. From hills to beaches, RailSwift provides top flight options, easy booking, and exciting travel add-ons.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./images/royal-heritage-haveli.jpg">
+        <div class="text">
+            <h3>Royal Heritage Journeys</h3>
+            <p>Step into royalty with our Royal Heritage Journeys. Travel through palaces and forts aboard luxury trains. RailSwift ensures a cultural experience with comfort and elegance.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./images/mountain.jpg">
+        <div class="text">
+            <h3>Rail Tour Packages</h3>
+            <p>See India’s scenic charm with our Rail Tour Packages. From Himalayan heights to Western Ghats, RailSwift provides unforgettable adventures via scenic train routes.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="./images/desert.jpg">
+        <div class="text">
+            <h3>Desert Adventures</h3>
+            <p>Explore India’s deserts with our Desert Adventures. From camel rides to cultural nights, RailSwift provides complete tour planning for a magical desert experience.</p>
+        </div>
+    </div>
+
+</div>
 
     </section>
 
@@ -205,5 +185,41 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+
+        document.querySelector("form").addEventListener("submit", function (e) {
+       e.preventDefault();  //  Prevent form reload
+       
+       const from = document.getElementById("from").value.trim();
+       const to = document.getElementById("to").value.trim();
+       const date = document.getElementById("date").value;
+       const classes = document.getElementById("classes").value;
+     
+       const booking = { from, to, date, classes };
+       localStorage.setItem("Booking_details", JSON.stringify(booking));
+     
+       window.location.href = "./trainlist.html";
+     });
+
+     document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector("header .right ul");
+
+    menuToggle.addEventListener("click", () => {
+      if (navMenu.style.display === "flex") {
+        navMenu.style.display = "none";
+      } else {
+        navMenu.style.display = "flex";
+      }
+    });
+  });
+
+    </script>
+
+
+
+    
+
 </body>
 </html>

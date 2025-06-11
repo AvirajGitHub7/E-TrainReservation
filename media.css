@@ -1,0 +1,132 @@
+/* Mobile (up to 600px) */
+@media (max-width:600px){
+   
+    header .left h1 {
+    font-size: 22px;
+    
+}
+
+   header .right ul {
+    display: none;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    position: absolute;
+    top: 65px;
+    gap:0;
+    right: 30px;
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 200;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  header .menu-toggle {
+    display: block;
+  }
+
+
+  /* to avoid hover effect or colour effect in  mobile device */
+   header .right ul li:hover {
+    color: inherit ;
+  }
+  .active {
+    color: inherit ;
+  }
+  .active::after {
+    content: none ;
+  }
+
+  /* To correct cards width and height */
+ .cards {
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .card {
+    width: 100%; /* Full width on small screens */
+    max-width: 100%;
+    max-height: 430px;
+    
+  }
+  #holidays h2{
+    margin:10px;
+    font-size: 25px;
+}
+.card p{
+   font-size: 16px;
+}
+
+  
+/* footer ka css */
+ footer {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+
+    /* css background display and booking Form */
+      #main {
+    height: 900px;
+    padding-top: 100px;
+    background-position: center;
+  }
+
+  
+  #main h1 {
+    position: static;
+    font-size: 28px;
+    margin: 20px 0 10px;
+    text-align: center;
+  }
+
+  #main p {
+    position: static;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .booking-form {
+    position: relative;
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+
+  .overlay {
+    z-index: 1; /* overlay background rahe */
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+}
+
+  .form-group input,
+.form-group select {
+    padding: 8px;
+    font-size: 14px;
+}
+
+  .checkboxes {
+    gap: 6px;
+  }
+
+  .checkboxes label {
+    font-size: 14px;
+  }
+
+
+}
+
